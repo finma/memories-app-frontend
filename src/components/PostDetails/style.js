@@ -9,7 +9,7 @@ export default makeStyles((theme) => ({
   },
   card: {
     display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
+    gridTemplateColumns: "2fr 1.5fr",
     width: "100%",
     [theme.breakpoints.down("sm")]: {
       gridTemplateColumns: "1fr",
@@ -39,5 +39,14 @@ export default makeStyles((theme) => ({
     padding: "20px",
     borderRadius: "15px",
     height: "39vh",
+  },
+  commentsOuterContainer: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  commentsInnerContainer: {
+    height: "200px",
+    overflowY: "auto",
+    marginRight: "30px",
   },
 }));
